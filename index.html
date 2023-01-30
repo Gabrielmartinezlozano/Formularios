@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<htlm lang="ES-es">
+
+    <head>
+        <title>Formulario Puzzzy</title>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <link href="estilos.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <h1>Puzzzy S.A.</h1>
+        <p>Rellena tus datos personales para acceder a las entrevistas de trabajo</p>
+        <form action="datos.html" method="post">
+            <fieldset>
+                <legend>Información personal:</legend>
+                <table>
+                    <tr>
+                        <td>Nombre completo:</td>
+                        <td>Edad:</td>
+                        <td>Hobbies o aficiones:</td>
+                        <td>Años de experiencia en trabajos similares:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="nombre"></td>
+                        <td><input type="number" name="edad"></td>
+                        <td><textarea name="aficiones" rows="1" cols="20">
+                            </textarea>
+                        </td>
+                        <td><select name="experiencia">
+                                <option value="opcion1">Sin experiencia</option>
+                                <option value="opcion2">Menos de 1 año</option>
+                                <option value="opcion3">De 1 a 2 años</option>
+                                <option value="opcion4">De 2 a 6 años</option>
+                                <option value="opcion5">De 6 a 15 años</option>
+                                <option value="opcion6">De 15 a 20 años</option>
+                                <option value="opcion7">De 20 a 25 años</option>
+                                <option value="opcion8">Más de 25 años</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Teléfono principal:</td>
+                        <td>Teléfono movil:</td>
+                        <td>Provincia:</td>
+                        <td>Localidad:</td>
+                    </tr>
+                    <tr>
+                        <td><input type="number" name="telefono1"></td>
+                        <td><input type="number" name="telefono2"></td>
+                        <td><input type="text" name="provincia"></td>
+                        <td><input type="text" name="localidad"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend>Futuro en la empresa:</legend>
+                <table>
+                    <tr>
+                        <td>Tiempo esperado <br> en al empresa</td>
+                        <td>Por qué crees que <br> estarás solo ese tiempo</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><select name="tiempo empresa">
+                                <option value="opcion1">Menos de 1 año</option>
+                                <option value="opcion2">De 1 a 3 años</option>
+                                <option value="opcion3">De 3 a 6 años</option>
+                                <option value="opcion4">De 6 a 10 años</option>
+                                <option value="opcion5">De 10 a 15 años</option>
+                                <option value="opcion6">Más de 15 años</option>
+                            </select>
+                        </td>
+                        <td><textarea name="t empresa" rows="1" cols="20"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <button type="reset">Resetear</button>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+
+    </html>
